@@ -1,0 +1,8 @@
+Shri Ganeshaya Namah
+
+1. Dict internal working optimize
+2. Randomized pincode for timeit
+3. Pre-fetching
+4. sparsity vs time (chache issue for less sparsity)
+5. Complete custom hash function and check it
+	1. Full bhardo and khali rhne do
