@@ -53,6 +53,8 @@ class sparseMat():
     
     def delete_json(self):
         '''This function is used to delete the created json files'''
+        self.merch_to_ID = {}
+        self.table = {}
         if(os.path.exists("table.json")):
             os.remove("table.json")
         if(os.path.exists("merch_to_ID.json")):
