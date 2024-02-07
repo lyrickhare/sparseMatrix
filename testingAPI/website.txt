@@ -1,0 +1,6 @@
+  'http://0.0.0.0:5000/insertMerchant'
+  'http://0.0.0.0:5000/getMerchants'
+  'http://0.0.0.0:5000/insertMerchant'
+  'http://0.0.0.0:5000/getMerchants'
+  'http://0.0.0.0:5000/insertMerchant'
+  'http://0.0.0.0:5000/getMerchants'

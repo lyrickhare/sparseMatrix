@@ -1,0 +1,5 @@
+seq 1 10 | xargs -n1 -P10  -I{} curl -X 'POST' 'http://0.0.0.0:5000/insertMerchant' -H 'accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' -d 'pinCode={}&merchID={}'
+
+
+
+curl -X 'POST' --parallel --parallel-immediate --parallel-max 5   'http://0.0.0.0:5000/insertMerchant' 'http://0.0.0.0:5000/getMerchants' 'http://0.0.0.0:5000/insertMerchant' 'http://0.0.0.0:5000/getMerchants' 'http://0.0.0.0:5000/insertMerchant' 'http://0.0.0.0:5000/getMerchants'
