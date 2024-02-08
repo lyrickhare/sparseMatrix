@@ -17,7 +17,6 @@ class sparseMat():
     def load_data(self):
         '''In this function we would load our data from JSON file, and if the
             file is not present we would create a new dict'''
-
         if(os.path.exists("table.json")):
             self.table = json.load(open("table.json"))
             
