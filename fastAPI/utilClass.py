@@ -54,8 +54,11 @@ class sparseMat():
             json.dump(self.table,f)
     
     def get_merchants(self,pincode):
-        merchants = np.frompyfunc(self.temp.get, 1, 1)(self.table[str(pincode)])
-        return(list(merchants))
+        if((str(pincode) in self.table)):
+            merchants = np.frompyfunc(self.temp.get, 1, 1)(self.table[str(pincode)])
+            return(list(merchants))
+        else:
+            return 0
     
     def delete_json(self):
         '''This function is used to delete the created json files'''

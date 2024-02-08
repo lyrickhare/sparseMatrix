@@ -6,6 +6,7 @@ ob = utilClass.sparseMat(30000,10000000)
 
 # @app.post("/insertMerchant")
 # async def insMer(pinCode : int= Form(...), merchID : int = Form(...)):
+#     ob.load_data()
 #     ob.insert_merchant(pinCode,merchID)
 #     ob.save_data()
 #     return {"result" : "successfully inserted"}
@@ -20,9 +21,12 @@ async def insMer():
 
 # @app.post("/getMerchants")
 # async def getMer(pinCode : int= Form(...)):
+#     ob.load_data()
 #     a = ob.get_merchants(pinCode)
-#     return  {str(pinCode):a}
-
+#     if(a!=0):
+#         return  {str(pinCode):a}
+#     else:
+#         return {"error" : "pinCode DNE"}
 
 
 @app.post("/getMerchants")
