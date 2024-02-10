@@ -82,6 +82,7 @@ class sparseMat():
             for i in self.table.values():
                 if self.merch_ID in i:
                     i.remove(self.merch_ID)
+            return(1)
         try:
             self.table[str(pincode)].remove(self.merch_ID)
         except:
