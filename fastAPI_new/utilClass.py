@@ -1,8 +1,5 @@
-import numpy as np
 import json
 import os
-import random
-import string
 
 class sparseMat():
     def __init__(self):
